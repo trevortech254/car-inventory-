@@ -1,3 +1,6 @@
 node_modules
 .next
 out
+
+# Local environment variables (secrets — never commit)
+.env*.local
