@@ -53,6 +53,25 @@
   gap: 0.75rem;
 }
 
+.profileMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profilePill {
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.2);
+  color: #dbeafe;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  font-size: 0.75rem;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .btnPrimary {
   display: inline-flex;
   align-items: center;
@@ -98,6 +117,49 @@
 .btnGhost:hover {
   background: rgba(255, 255, 255, 0.08);
   color: #e2e8f0;
+}
+
+.btnGhostLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #94a3b8;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btnGhostLink:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+}
+
+.btnPrimaryLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.15rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+  border-radius: 10px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.12) inset,
+    0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.btnPrimaryLink:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
 }
 
 .stats {
@@ -303,6 +365,45 @@
 .empty p {
   margin: 0.5rem 0 0;
   font-size: 0.9375rem;
+}
+
+.authError {
+  margin: 0;
+  color: #fca5a5;
+  font-size: 0.8125rem;
+}
+
+.contactLead {
+  margin: 0.35rem 0 1rem;
+  color: #94a3b8;
+}
+
+.contactPanel {
+  margin-top: 0.9rem;
+  padding: 0.9rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contactPanel p {
+  margin: 0 0 0.7rem;
+}
+
+.contactActions {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.mobileCallOnly {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mobileCallOnly {
+    display: inline-flex;
+  }
 }
 
 /* Modal */
